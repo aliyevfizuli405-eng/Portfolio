@@ -44,6 +44,61 @@ line-height: 1.8;
 color: #d0d0d0;
 }
 
+.blog-content {
+margin-top: 50px;
+}
+
+.blog-post {
+background: linear-gradient(135deg, #1b1b1b, #2a2a2a);
+padding: 30px;
+margin-bottom: 30px;
+border-left: 4px solid #00ff88;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 255, 136, 0.1);
+transition: all 0.3s ease;
+}
+
+.blog-post:hover {
+transform: translateX(10px);
+box-shadow: 0 8px 12px rgba(0, 255, 136, 0.2);
+}
+
+.blog-post h2 {
+font-size: 1.6em;
+color: #00ff88;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.blog-post p {
+font-size: 1.05em;
+line-height: 1.8;
+color: #d0d0d0;
+margin: 15px 0;
+}
+
+.blog-post ul {
+list-style: none;
+padding-left: 0;
+}
+
+.blog-post li {
+font-size: 1.05em;
+line-height: 1.8;
+color: #d0d0d0;
+padding-left: 25px;
+margin-bottom: 10px;
+position: relative;
+}
+
+.blog-post li:before {
+content: "▸";
+position: absolute;
+left: 0;
+color: #00ff88;
+font-weight: bold;
+}
+
 footer {
 background-color: #1b1b1b;
 text-align: center;
@@ -53,4 +108,28 @@ border-top: 2px solid #00ff88;
 color: #999;
 font-size: 0.9em;
 }
+
+@media screen and (max-width: 768px) {
+main {
+margin: 40px 20px;
+padding: 0;
+}
+
+main h1 {
+font-size: 1.8em;
+}
+
+.blog-post {
+padding: 20px;
+}
+
+.blog-post h2 {
+font-size: 1.3em;
+}
+
+.blog-post p {
+font-size: 1em;
+}
+}
+
 
